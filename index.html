@@ -1,41 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
   <title>Shyshien's Place</title>
-</head>
-  
+
   <style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background:
-      radial-gradient(circle at top, rgba(255,255,255,0.6), transparent 60%),
-      linear-gradient(to top, #d8b4fe, #fbcfe8);
-  }
-</style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.75), transparent 60%),
+        linear-gradient(to top, #f9a8d4, #fbcfe8, #fce7f3);
+      color: #831843;
+      animation: fadeIn 1.5s ease;
+    }
 
-  <h1 style = "background-color : red ; color : white; text-align : center"> SYISEN'S WORLD</h1>
-  <hr color ="red">
-  <h2><font color="darkpurple">Kartika Larasati</font>
-  </h2>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-  <p align="center">
-    <font size="5">
-      Halo, nama saya adalah Kartika Larasati. 
-      Saya lahir di Depok, pada tanggal 14 April 2010. 
-      Saya bersekolah di SMAN 2 Cibinong dan menduduki kelas 10. 
-      Hari ini adalah hari Senin, saya belajar informatika. 
-      Materi yang sedang dipelajari adalah cara memakai HTML untuk pemula. 
-      Menurutku, HTML lumayan mudah untuk dimengerti, 
-      asal cara berpikir logika dan pemahaman kita berjalan dengan lancar.
-    </font>
-  </p>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 35px;
+      text-align: center;
+    }
 
-  <p align="center">
-    <img src="webcam-toy-photo13.jpg" width="300">
-  </p>
+    h1 {
+      background: linear-gradient(135deg, #f472b6, #ec4899);
+      color: white;
+      padding: 30px;
+      border-radius: 30px;
+      letter-spacing: 4px;
+      box-shadow: 0 0 25px rgba(236,72,153,0.6);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    h2 {
+      margin-top: 45px;
+      font-size: 34px;
+      color: #be185d;
+    }
+
+    h3 {
+      color: #db2777;
+      margin-top: 35px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.9;
+      background: rgba(255,255,255,0.6);
+      padding: 25px;
+      border-radius: 22px;
+      margin-top: 22px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 270px;
+      border-radius: 30px;
+      margin-top: 30px;
+      box-shadow: 0 0 25px rgba(236,72,153,0.6);
+      transition: transform 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: rgba(255,255,255,0.65);
+      padding: 25px;
+      border-radius: 25px;
+      margin-top: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .decor {
+      font-size: 28px;
+      margin-bottom: 18px;
+      color: #ec4899;
+      animation: sparkle 2s infinite alternate;
+    }
+
+    @keyframes sparkle {
+      from { opacity: 0.7; }
+      to { opacity: 1; }
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 14px 30px;
+      background: linear-gradient(135deg, #f472b6, #ec4899);
+      color: white;
+      text-decoration: none;
+      border-radius: 40px;
+      font-size: 18px;
+      box-shadow: 0 0 20px rgba(236,72,153,0.6);
+      transition: all 0.4s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(236,72,153,0.9);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      font-size: 16px;
+      color: #9d174d;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="decor">🎀 ♡ ✧ ˚ ༘ ⋆｡♡˚ ✧ ♡ 🎀</div>
+
+    <h1>SYISEN'S WORLD</h1>
+
+    <h2>Kartika Larasati</h2>
+
+    <p>
+      Selamat datang di <b>Syisen's World</b> 💗  
+      Sebuah halaman web dengan nuansa coquette girly aesthetic yang lembut,
+      manis, dan penuh warna pastel. Website ini aku buat sebagai latihan HTML
+      sekaligus ruang kecil untuk mengekspresikan diriku ✨
+    </p>
+
+    <img src="webcam-toy-photo13.jpg">
+
+    <h3>♡ Tentang Aku ♡</h3>
+
+    <p>
+      Nama saya Kartika Larasati. Saya lahir di Depok pada tanggal 14 April 2010.
+      Saat ini saya bersekolah di SMAN 2 Cibinong dan duduk di kelas 10.
+      Aku menyukai hal-hal yang lucu, feminin, dan bernuansa pink pastel 🌸
+    </p>
+
+    <div class="card">
+      <h3>♡ Informatika & HTML ♡</h3>
+      <p>
+        Saat ini aku sedang mempelajari HTML di pelajaran informatika.
+        Menurutku HTML cukup menyenangkan karena kita bisa langsung melihat
+        hasil dari kode yang kita tulis. Pelan-pelan, website sederhana bisa
+        berubah jadi cantik 💻💗
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>♡ Harapan ♡</h3>
+      <p>
+        Aku berharap bisa terus berkembang dalam bidang teknologi dan desain.
+        Walaupun awalnya terasa sulit, dengan latihan dan semangat,
+        semuanya bisa dipelajari. Website ini adalah langkah kecil menuju
+        impian besarku ✨🎀
+      </p>
+    </div>
+
+    <a class="button" href="#">♡ Thank You for Visiting ♡</a>
+
+    <footer>
+      ♡ Made with love, pastel, and HTML ♡ <br>
+      ✨ Coquette • Girly • Aesthetic ✨
+    </footer>
+
+  </div>
 
 </body>
 </html>
+
+
 
 
 
